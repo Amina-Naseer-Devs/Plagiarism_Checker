@@ -29,6 +29,8 @@ Whether you are a content creator, publisher, or researcher — this tool provid
 
 ## ⚙️ How It Works
 
+![Architecture Diagram](images/architecture.png)
+
 ```
 User Input (Text or .txt File)
             ↓
@@ -237,6 +239,28 @@ All tests must pass before submitting any pull request.
 
 ---
 
+## 📊 System Evaluation
+
+The system was tested on 7 sample inputs covering different content types:
+
+| Test Case | Expected Result | Actual Result |
+|---|---|---|
+| High similarity text | High similarity detected | ✅ 72.88% — Correct |
+| Unrelated content | Low similarity | ✅ 7.99% — Correct |
+| Empty input | Error message | ✅ Handled correctly |
+| Too short input | Error message | ✅ Handled correctly |
+| Symbols only | Error message | ✅ Handled correctly |
+| Numbers only | Error message | ✅ Handled correctly |
+| WIPO related content | Moderate similarity | ✅ 54.85% — Correct |
+
+All 7 test cases produced expected results. System correctly 
+distinguishes between high, moderate, and low similarity content.
+
+> Note: Results depend on reference corpus size and content. 
+> A larger corpus will produce more meaningful scores.
+
+---
+
 ## 🔮 Future Enhancements
 
 - Support PDF and DOCX file uploads
@@ -265,6 +289,18 @@ BS Software Engineering Student
 National University of Modern Languages (NUML)
 📧 numl-s24-35647@numls.edu.pk
 🔗 [GitHub Profile](https://github.com/Amina-Naseer-Devs)
+
+---
+
+## 🤝 Ethical Use Statement
+
+This system is designed to **assist human review** rather than 
+replace legal, academic, or editorial judgment.
+
+- Similarity scores are indicators only — not legal determinations
+- Results should always be reviewed by a qualified human
+- The system does not access or store any user submitted content
+- Intended for academic research and educational purposes only
 
 ---
 
