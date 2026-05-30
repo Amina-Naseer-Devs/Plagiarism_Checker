@@ -1,0 +1,1 @@
+Machine learning algorithms analyze large datasets to identify patterns and make predictions. These systems improve automatically through experience without being explicitly programmed. Applications include image recognition, natural language processing, and recommendation systems.

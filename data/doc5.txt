@@ -1,0 +1,1 @@
+Natural language processing enables computers to understand and interpret human language. Text similarity detection is a fundamental NLP task used in plagiarism detection, duplicate content identification, and information retrieval systems across academic and commercial applications.
