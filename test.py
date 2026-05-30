@@ -64,17 +64,24 @@ status, results = check_similarity(text5)
 print(f"Status: {status}")
 print("System Response: No valid content detected after processing.")
 
-
-# ── TEST 6: WIPO Related Content ─────────────────────
-print("\n📄 TEST 6: WIPO / IP Related Content")
+# ── TEST 6: Numbers Only ─────────────────────────────
+print("\n📄 TEST 6: Numbers Only Input")
 print("-" * 40)
-text6 = """WIPO provides international frameworks for protecting copyright 
+text6 = "123 456 789 000"
+status, results = check_similarity(text6)
+print(f"Status: {status}")
+print("System Response: No valid content detected. Please enter real text.")
+
+# ── TEST 7: WIPO Related Content ─────────────────────
+print("\n📄 TEST 7: WIPO / IP Related Content")
+print("-" * 40)
+text7 = """WIPO provides international frameworks for protecting copyright 
 and trademarks. Digital content theft is a serious challenge for 
 publishers worldwide."""
 
-status, results = check_similarity(text6)
+status, results = check_similarity(text7)
 if status == "success":
-    print(f"Word Count : {word_count(text6)}")
+    print(f"Word Count : {word_count(text7)}")
     for doc, score in results:
         print(f"  {doc:20} {score}%")
     top_doc, top_score = get_top_match(results)
